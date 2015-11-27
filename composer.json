@@ -1,0 +1,17 @@
+{
+    "name": "gisostallenberg/file-permissions",
+    "description": "Library to convert file permissions from various formats to another",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Giso Stallenberg",
+            "email": "gisostallenberg@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {},
+    "require-dev": {
+        "phpunit/phpunit": "^5.0"
+    }
+}
