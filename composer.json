@@ -1,5 +1,5 @@
 {
-    "name": "gisostallenberg/file-permissions",
+    "name": "gisostallenberg/file-permission-calculator",
     "description": "Library to convert file permissions from various formats to another",
     "type": "library",
     "license": "MIT",
@@ -16,7 +16,7 @@
     },
     "autoload": {
         "psr-4": {
-            "GisoStallenberg\\FilePermissions": "src/"
+            "GisoStallenberg\\FilePermissionCalculator\\": "src/"
         }
     }
 }
