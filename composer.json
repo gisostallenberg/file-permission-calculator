@@ -3,6 +3,7 @@
     "description": "Library to convert file permissions from various formats to another",
     "type": "library",
     "license": "MIT",
+    "keywords": ["permissions", "file permissions", "chmod", "fileperms"],
     "authors": [
         {
             "name": "Giso Stallenberg",
