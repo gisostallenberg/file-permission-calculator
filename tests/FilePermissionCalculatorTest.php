@@ -102,7 +102,7 @@ class FilePermissionCalculatorTest extends PHPUnit_Framework_TestCase
             array('fromStringRepresentation', 'urwxrwxrwx', 0777),
             array('fromStringRepresentation', '----------', 0100000),
             array('fromStringRepresentation', 'u---------', 0),
-            array('fromFile', 'tests/Resources/writable-regular', 0100444),
+            array('fromFile', 'tests/Resources/writable-regular', 0100644),
         );
     }
 }
