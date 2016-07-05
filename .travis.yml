@@ -16,7 +16,7 @@ matrix:
 before_install: composer self-update
 
 install: 
-  - if [[ $TRAVIS_PHP_VERSION = 5.4 ]]; then composer update; fi;
+  - if [[ $TRAVIS_PHP_VERSION = 5.4 || $TRAVIS_PHP_VERSION = 5.5]]; then composer update; fi;
   - composer install
 
 script: vendor/bin/phpunit
