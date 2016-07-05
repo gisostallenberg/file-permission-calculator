@@ -13,6 +13,14 @@ use PHPUnit_Framework_TestCase;
 class FilePermissionCalculatorTest extends PHPUnit_Framework_TestCase
 {
     /**
+     * Setup for the test
+     */
+    protected function setUp()
+    {
+        chmod(__DIR__ . '/Resources/writable-regular', 0100644);
+    }
+
+    /**
      * Tests instantiation of FilePermissionCalculator.
      */
     public function testConstruct()
