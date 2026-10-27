@@ -2,7 +2,7 @@
 [![Latest Unstable Version](https://poser.pugx.org/gisostallenberg/file-permission-calculator/v/unstable)](//packagist.org/packages/gisostallenberg/file-permission-calculator)
 [![License](https://poser.pugx.org/gisostallenberg/file-permission-calculator/license.svg)](https://packagist.org/packages/gisostallenberg/file-permission-calculator)
 [![Total Downloads](https://poser.pugx.org/gisostallenberg/file-permission-calculator/downloads)](https://packagist.org/packages/gisostallenberg/file-permission-calculator)
-[![Travis](https://api.travis-ci.org/gisostallenberg/file-permission-calculator.svg?branch=master)](https://travis-ci.org/gisostallenberg/file-permission-calculator)
+[![CI](https://github.com/gisostallenberg/file-permission-calculator/actions/workflows/ci.yml/badge.svg)](https://github.com/gisostallenberg/file-permission-calculator/actions/workflows/ci.yml)
 
 # File Permission Calculator
 Library to convert file permissions from various formats to another
@@ -22,4 +22,5 @@ echo FilePermissionCalculator::fromStringRepresentation('-rw-r--r--')->getMode()
 echo FilePermissionCalculator::fromStringRepresentation('-rw-r--r--')->getOctalString(); // 100644
 echo FilePermissionCalculator::fromStringRepresentation('-rw-r--r--'); // -rw-r--r--
 echo FilePermissionCalculator::fromOctalString('0100700'); // -rwx------
+echo FilePermissionCalculator::fromFile('/etc/hosts'); // -rw-r--r-- (reads the file's actual permissions)
 ```

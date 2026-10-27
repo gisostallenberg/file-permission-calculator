@@ -150,7 +150,10 @@ class FilePermissionCalculator
      */
     public static function fromFile($file)
     {
-        return new static(fileperms($file));
+        // lstat() does not follow symlinks, so a symlink reports as 'l...' instead of its target's type.
+        $stat = lstat($file);
+
+        return new static($stat['mode']);
     }
 
     /**

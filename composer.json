@@ -10,14 +10,20 @@
             "email": "gisostallenberg@gmail.com"
         }
     ],
-    "minimum-stability": "stable",
-    "require": {},
+    "require": {
+        "php": "^8.5"
+    },
     "require-dev": {
-        "phpunit/phpunit": "^4.8 || ^5.4"
+        "phpunit/phpunit": "^13"
     },
     "autoload": {
         "psr-4": {
             "GisoStallenberg\\FilePermissionCalculator\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "GisoStallenberg\\Test\\": "tests/"
         }
     }
 }
