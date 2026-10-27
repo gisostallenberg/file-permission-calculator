@@ -1,0 +1,7 @@
+services:
+  tests:
+    build: .
+    volumes:
+      - .:/app
+    # Installs deps on every run. Run: docker compose run --rm tests
+    command: sh -c "composer install && vendor/bin/phpunit"
